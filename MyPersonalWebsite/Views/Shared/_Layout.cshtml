@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html lang="en-us" style="background: #000000;">
+<head>
+    <meta charset="utf-8" />
+    @*<meta name="viewport" content="width=device-width" />*@
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Chinmoy Mohanty is a Programmer, Technologist and an Active Blogger who works across a myriad of MS Programming Technologies.">
+    <meta name="keywords" content="HTML,CSS,JavaScript,blog,NET,Visual Studio,WCF,programming">
+    <meta name="author" content="Chinmoy Mohanty">
+    <link rel="shortcut icon" href="@Url.Content("~/Content/Image/favicon.ico")" />
+    <link rel="author" href="https://plus.google.com/+ChinmoyMohanty85/" />
+    <link rel="me" type="text/html" href="https://plus.google.com/+ChinmoyMohanty85/" />
+    <link rel="me" type="text/html" href="https://www.linkedin.com/in/chinmoymohanty85" />
+    <link rel="me" type="text/html" href="https://twitter.com/ChinmoyMohanty" />
+    <link rel="me" type="text/html" href="http://www.facebook.com/chinmoymohanty85"/>
+    <link rel="me" type="text/html" href="https://github.com/chinmoymohanty85" />
+
+    <meta name="msapplication-task" content="name=Chinmoy on LinkedIN;action-uri=https://in.linkedin.com/in/chinmoymohanty85;icon-uri=http://linkedin.com/favicon.ico" />
+    <meta name="msapplication-task" content="name=Chinmoy on Twitter;action-uri=https://twitter.com/ChinmoyMohanty;icon-uri=http://twitter.com/favicon.ico" />
+    <meta name="msapplication-task" content="name=Chinmoy on Facebook;action-uri=http://www.facebook.com/chinmoymohanty85;icon-uri=https://s-static.ak.facebook.com/rsrc.php/yi/r/q9U99v3_saj.ico" />
+    <meta name="msapplication-starturl" content="./" />
+    <meta name="msapplication-TileImage" content="@Url.Content("~/Content/Image/Pic.png")" />
+    <meta name="application-name" content="Chinmoy's Mohanty's Blog" />
+    <meta name="msapplication-tooltip" content="Chinmoy's Mohanty's Blog" />
+
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/metrocss2")
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <style>
+        body {
+            background: #1d1d1d;
+        }
+
+        .copyright {
+            text-align: center;
+            color: #ededed;
+            font-size: 60%;
+            margin: 2em auto;
+        }
+
+        footer {
+            clear: both;
+            background-color: #000000;
+            font-size: .8em;
+            height: 25px;
+        }
+    </style>
+
+</head>
+<body class="metrouicss">
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/metrojs2")
+    @Scripts.Render("~/bundles/metro")
+
+    @RenderBody()
+
+    @RenderSection("scripts", required: false)
+    <footer>
+        <div>
+            <div class="copyright">
+                <p>&copy; Copyright 2015, <a href="http://www.chinmoymohanty.com">Chinmoy Mohanty</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
