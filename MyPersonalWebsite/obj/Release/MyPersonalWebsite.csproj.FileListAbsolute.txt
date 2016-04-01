@@ -54,3 +54,5 @@ C:\Users\cmohanty\Source\Repos\MyPersonalWebsite\MyPersonalWebsite\bin\System.We
 C:\Users\cmohanty\Source\Repos\MyPersonalWebsite\MyPersonalWebsite\obj\Release\MyPersonalWebsite.csprojResolveAssemblyReference.cache
 C:\Users\cmohanty\Source\Repos\MyPersonalWebsite\MyPersonalWebsite\obj\Release\MyPersonalWebsite.dll
 C:\Users\cmohanty\Source\Repos\MyPersonalWebsite\MyPersonalWebsite\obj\Release\MyPersonalWebsite.pdb
+C:\Users\cmohanty\Source\Repos\MyPersonalWebsite\MyPersonalWebsite\bin\Elmah.dll
+C:\Users\cmohanty\Source\Repos\MyPersonalWebsite\MyPersonalWebsite\bin\Elmah.Mvc.dll

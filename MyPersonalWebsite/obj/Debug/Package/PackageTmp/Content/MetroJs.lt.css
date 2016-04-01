@@ -1,0 +1,799 @@
+﻿/* Sizes */
+.metrojs .live-tile,
+.metrojs .list-tile,
+.metrojs .copy-tile,
+.metrojs .tile-strip .flip-list > li {
+  height: 150px;
+  margin: 5px;
+  outline: 1px solid transparent;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0px;
+  width: 150px;
+}
+.metrojs .live-tile.half-tile,
+.metrojs .list-tile.half-tile,
+.metrojs .copy-tile.half-tile,
+.metrojs .tile-strip .flip-list > li.half-tile {
+  height: 70px;
+  width: 70px;
+}
+.metrojs .live-tile.half-wide,
+.metrojs .list-tile.half-wide,
+.metrojs .copy-tile.half-wide,
+.metrojs .tile-strip .flip-list > li.half-wide {
+  width: 70px;
+}
+.metrojs .live-tile.two-wide,
+.metrojs .list-tile.two-wide,
+.metrojs .copy-tile.two-wide,
+.metrojs .tile-strip .flip-list > li.two-wide {
+  width: 310px;
+}
+.metrojs .live-tile.three-wide,
+.metrojs .list-tile.three-wide,
+.metrojs .copy-tile.three-wide,
+.metrojs .tile-strip .flip-list > li.three-wide {
+  width: 470px;
+}
+.metrojs .live-tile.four-wide,
+.metrojs .list-tile.four-wide,
+.metrojs .copy-tile.four-wide,
+.metrojs .tile-strip .flip-list > li.four-wide {
+  width: 630px;
+}
+.metrojs .live-tile.five-wide,
+.metrojs .list-tile.five-wide,
+.metrojs .copy-tile.five-wide,
+.metrojs .tile-strip .flip-list > li.five-wide {
+  width: 790px;
+}
+.metrojs .live-tile.six-wide,
+.metrojs .list-tile.six-wide,
+.metrojs .copy-tile.six-wide,
+.metrojs .tile-strip .flip-list > li.six-wide {
+  width: 950px;
+}
+.metrojs .live-tile.seven-wide,
+.metrojs .list-tile.seven-wide,
+.metrojs .copy-tile.seven-wide,
+.metrojs .tile-strip .flip-list > li.seven-wide {
+  width: 1110px;
+}
+.metrojs .live-tile.eight-wide,
+.metrojs .list-tile.eight-wide,
+.metrojs .copy-tile.eight-wide,
+.metrojs .tile-strip .flip-list > li.eight-wide {
+  width: 1270px;
+}
+.metrojs .live-tile.nine-wide,
+.metrojs .list-tile.nine-wide,
+.metrojs .copy-tile.nine-wide,
+.metrojs .tile-strip .flip-list > li.nine-wide {
+  width: 1430px;
+}
+.metrojs .live-tile.ten-wide,
+.metrojs .list-tile.ten-wide,
+.metrojs .copy-tile.ten-wide,
+.metrojs .tile-strip .flip-list > li.ten-wide {
+  width: 1590px;
+}
+.metrojs .live-tile.half-tall,
+.metrojs .list-tile.half-tall,
+.metrojs .copy-tile.half-tall,
+.metrojs .tile-strip .flip-list > li.half-tall {
+  height: 70px;
+}
+.metrojs .live-tile.two-tall,
+.metrojs .list-tile.two-tall,
+.metrojs .copy-tile.two-tall,
+.metrojs .tile-strip .flip-list > li.two-tall {
+  height: 310px;
+}
+.metrojs .live-tile.three-tall,
+.metrojs .list-tile.three-tall,
+.metrojs .copy-tile.three-tall,
+.metrojs .tile-strip .flip-list > li.three-tall {
+  height: 470px;
+}
+.metrojs .live-tile.four-tall,
+.metrojs .list-tile.four-tall,
+.metrojs .copy-tile.four-tall,
+.metrojs .tile-strip .flip-list > li.four-tall {
+  height: 630px;
+}
+.metrojs .live-tile.five-tall,
+.metrojs .list-tile.five-tall,
+.metrojs .copy-tile.five-tall,
+.metrojs .tile-strip .flip-list > li.five-tall {
+  height: 790px;
+}
+.metrojs .live-tile.six-tall,
+.metrojs .list-tile.six-tall,
+.metrojs .copy-tile.six-tall,
+.metrojs .tile-strip .flip-list > li.six-tall {
+  height: 950px;
+}
+.metrojs .live-tile.seven-tall,
+.metrojs .list-tile.seven-tall,
+.metrojs .copy-tile.seven-tall,
+.metrojs .tile-strip .flip-list > li.seven-tall {
+  height: 1110px;
+}
+.metrojs .live-tile.eight-tall,
+.metrojs .list-tile.eight-tall,
+.metrojs .copy-tile.eight-tall,
+.metrojs .tile-strip .flip-list > li.eight-tall {
+  height: 1270px;
+}
+.metrojs .live-tile.nine-tall,
+.metrojs .list-tile.nine-tall,
+.metrojs .copy-tile.nine-tall,
+.metrojs .tile-strip .flip-list > li.nine-tall {
+  height: 1430px;
+}
+.metrojs .live-tile.ten-tall,
+.metrojs .list-tile.ten-tall,
+.metrojs .copy-tile.ten-tall,
+.metrojs .tile-strip .flip-list > li.ten-tall {
+  height: 1590px;
+}
+/* flip-list tile grid sprite styles */
+.metrojs .live-tile > .flip-list,
+.metrojs .list-tile > .flip-list {
+  height: 100%;
+  width: 100%;
+}
+.metrojs .flip-list > li {
+  height: 50px;
+  margin: 0px;
+  padding: 0px;
+  width: 50px;
+}
+.metrojs .flip-list.fourTiles > li {
+  border: none;
+  padding: 0;
+  margin: 0;
+  height: 50%;
+  width: 50%;
+}
+.metrojs .flip-list.nineTiles > li {
+  height: 33%;
+  width: 33%;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.metrojs .flip-list.fourTiles > li > div,
+.metrojs .flip-list.fourTiles > li > div > a,
+.metrojs .flip-list.fourTiles > li > div > img,
+.metrojs .flip-list.nineTiles > li > div,
+.metrojs .flip-list.nineTiles > li > div > a,
+.metrojs .flip-list.nineTiles > li > div > img {
+  border: none;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+/* fourTile background positions */
+.metrojs .fourTiles .fourTiles1 img,
+.metrojs .fourTiles img.fourTiles1,
+.metrojs .fourTiles .fourTiles1 a,
+.metrojs .fourTiles .tile-1 img,
+.metrojs .fourTiles .tile-1 a {
+  background-position: 0px 0px;
+}
+.metrojs .fourTiles .fourTiles2 img,
+.metrojs .fourTiles img.fourTiles2,
+.metrojs .fourTiles .fourTiles2 a,
+.metrojs .fourTiles .tile-2 img,
+.metrojs .fourTiles .tile-2 a {
+  background-position: -75px 0px;
+}
+.metrojs .fourTiles .fourTiles3 img,
+.metrojs .fourTiles img.fourTiles3,
+.metrojs .fourTiles .fourTiles3 a,
+.metrojs .fourTiles .tile-3 img,
+.metrojs .fourTiles .tile-3 a {
+  background-position: 0px -75px;
+}
+.metrojs .fourTiles .fourTiles4 img,
+.metrojs .fourTiles img.fourTiles4,
+.metrojs .fourTiles .fourTiles4 a,
+.metrojs .fourTiles .tile-4 img,
+.metrojs .fourTiles .tile-4 a {
+  background-position: -75px -75px;
+}
+/* nineTile background positions */
+.metrojs .nineTiles .nineTiles1 img,
+.metrojs .nineTiles img.nineTiles1,
+.metrojs .nineTiles .nineTiles1 a,
+.metrojs .nineTiles .tile-1 img,
+.metrojs .nineTiles .tile-1 a {
+  background-position: 0px 0px;
+}
+.metrojs .nineTiles .nineTiles2 img,
+.metrojs .nineTiles img.nineTiles2,
+.metrojs .nineTiles .nineTiles2 a,
+.metrojs .nineTiles .tile-2 img,
+.metrojs .nineTiles .tile-2 a {
+  background-position: -50px 0px;
+}
+.metrojs .nineTiles .nineTiles3 img,
+.metrojs .nineTiles img.nineTiles3,
+.metrojs .nineTiles .nineTiles3 a,
+.metrojs .nineTiles .tile-3 img,
+.metrojs .nineTiles .tile-3 a {
+  background-position: -100px 0px;
+}
+.metrojs .nineTiles .nineTiles4 img,
+.metrojs .nineTiles img.nineTiles4,
+.metrojs .nineTiles .nineTiles4 a,
+.metrojs .nineTiles .tile-4 img,
+.metrojs .nineTiles .tile-4 a {
+  background-position: 0px -50px;
+}
+.metrojs .nineTiles .nineTiles5 img,
+.metrojs .nineTiles img.nineTiles5,
+.metrojs .nineTiles .nineTiles5 a,
+.metrojs .nineTiles .tile-5 img,
+.metrojs .nineTiles .tile-5 a {
+  background-position: -50px -50px;
+}
+.metrojs .nineTiles .nineTiles6 img,
+.metrojs .nineTiles img.nineTiles6,
+.metrojs .nineTiles .nineTiles6 a,
+.metrojs .nineTiles .tile-6 img,
+.metrojs .nineTiles .tile-6 a {
+  background-position: -100px -50px;
+}
+.metrojs .nineTiles .nineTiles7 img,
+.metrojs .nineTiles img.nineTiles7,
+.metrojs .nineTiles .nineTiles7 a,
+.metrojs .nineTiles .tile-7 img,
+.metrojs .nineTiles .tile-7 a {
+  background-position: 0px -100px;
+}
+.metrojs .nineTiles .nineTiles8 img,
+.metrojs .nineTiles img.nineTiles8,
+.metrojs .nineTiles .nineTiles8 a,
+.metrojs .nineTiles .tile-8 img,
+.metrojs .nineTiles .tile-8 a {
+  background-position: -50px -100px;
+}
+.metrojs .nineTiles .nineTiles9 img,
+.metrojs .nineTiles img.nineTiles9,
+.metrojs .nineTiles .nineTiles9 a,
+.metrojs .nineTiles .tile-9 img,
+.metrojs .nineTiles .tile-9 a {
+  background-position: -100px -100px;
+}
+.metrojs .tile-group,
+.metrojs .tile-strip {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  z-index: 20;
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  -ms-perspective: 800px;
+  perspective: 800px;
+}
+.metrojs .tile-group.one-tile,
+.metrojs .tile-strip.one-tile {
+  height: 160px;
+  width: 160px;
+}
+.metrojs .tile-group.half-wide,
+.metrojs .tile-strip.half-wide {
+  width: 80px;
+}
+.metrojs .tile-group.one-wide,
+.metrojs .tile-strip.one-wide {
+  width: 160px;
+}
+.metrojs .tile-group.two-wide,
+.metrojs .tile-strip.two-wide {
+  width: 320px;
+}
+.metrojs .tile-group.three-wide,
+.metrojs .tile-strip.three-wide {
+  width: 480px;
+}
+.metrojs .tile-group.four-wide,
+.metrojs .tile-strip.four-wide {
+  width: 640px;
+}
+.metrojs .tile-group.five-wide,
+.metrojs .tile-strip.five-wide {
+  width: 800px;
+}
+.metrojs .tile-group.six-wide,
+.metrojs .tile-strip.six-wide {
+  width: 960px;
+}
+.metrojs .tile-group.seven-wide,
+.metrojs .tile-strip.seven-wide {
+  width: 1120px;
+}
+.metrojs .tile-group.eight-wide,
+.metrojs .tile-strip.eight-wide {
+  width: 1280px;
+}
+.metrojs .tile-group.nine-wide,
+.metrojs .tile-strip.nine-wide {
+  width: 1440px;
+}
+.metrojs .tile-group.ten-wide,
+.metrojs .tile-strip.ten-wide {
+  width: 1600px;
+}
+.metrojs .tile-group.half-tall,
+.metrojs .tile-strip.half-tall {
+  height: 80px;
+}
+.metrojs .tile-group.one-tall,
+.metrojs .tile-strip.one-tall {
+  height: 160px;
+}
+.metrojs .tile-group.two-tall,
+.metrojs .tile-strip.two-tall {
+  height: 320px;
+}
+.metrojs .tile-group.three-tall,
+.metrojs .tile-strip.three-tall {
+  height: 480px;
+}
+.metrojs .tile-group.four-tall,
+.metrojs .tile-strip.four-tall {
+  height: 640px;
+}
+.metrojs .tile-group.five-tall,
+.metrojs .tile-strip.five-tall {
+  height: 800px;
+}
+.metrojs .tile-group.six-tall,
+.metrojs .tile-strip.six-tall {
+  height: 960px;
+}
+.metrojs .tile-group.seven-tall,
+.metrojs .tile-strip.seven-tall {
+  height: 1120px;
+}
+.metrojs .tile-group.eight-tall,
+.metrojs .tile-strip.eight-tall {
+  height: 1280px;
+}
+.metrojs .tile-group.nine-tall,
+.metrojs .tile-strip.nine-tall {
+  height: 1440px;
+}
+.metrojs .tile-group.ten-tall,
+.metrojs .tile-strip.ten-tall {
+  height: 1600px;
+}
+/* liveTile styles */
+.metrojs .tile-strip,
+.metrojs .live-tile,
+.metrojs .list-tile,
+.metrojs .copy-tile,
+.metrojs .slide {
+  float: left;
+}
+.metrojs .tile-strip.bounce,
+.metrojs .live-tile.bounce,
+.metrojs .list-tile.bounce,
+.metrojs .copy-tile.bounce,
+.metrojs .slide.bounce {
+  cursor: pointer;
+  outline: 1px solid transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.metrojs .tile-strip.bounce.bounce-c,
+.metrojs .live-tile.bounce.bounce-c,
+.metrojs .list-tile.bounce.bounce-c,
+.metrojs .copy-tile.bounce.bounce-c,
+.metrojs .slide.bounce.bounce-c {
+  filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.95, M12=0, M21=0, M22=0.95);
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  -moz-transform: scale(0.95);
+  -o-transform: scale(0.95);
+  transform: scale(0.95);
+}
+.metrojs .tile-strip.bounce.bounce-t,
+.metrojs .live-tile.bounce.bounce-t,
+.metrojs .list-tile.bounce.bounce-t,
+.metrojs .copy-tile.bounce.bounce-t,
+.metrojs .slide.bounce.bounce-t {
+  -webkit-transform: rotateX(20deg);
+  -ms-transform: rotateX(20deg);
+  -moz-transform: rotateX(20deg);
+  -o-transform: rotateX(20deg);
+  transform: rotateX(20deg);
+  -webkit-transform-origin: 0% 100%;
+  -moz-transform-origin: 0% 100%;
+  -ms-transform-origin: 0% 100%;
+  -o-transform-origin: 0% 100%;
+  transform-origin: 0% 100%;
+}
+.metrojs .tile-strip.bounce.bounce-b,
+.metrojs .live-tile.bounce.bounce-b,
+.metrojs .list-tile.bounce.bounce-b,
+.metrojs .copy-tile.bounce.bounce-b,
+.metrojs .slide.bounce.bounce-b {
+  -webkit-transform: rotateX(-20deg);
+  -ms-transform: rotateX(-20deg);
+  -moz-transform: rotateX(-20deg);
+  -o-transform: rotateX(-20deg);
+  transform: rotateX(-20deg);
+  -webkit-transform-origin: 50% 0%;
+  -moz-transform-origin: 50% 0%;
+  -ms-transform-origin: 50% 0%;
+  -o-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+}
+.metrojs .tile-strip.bounce.bounce-r,
+.metrojs .live-tile.bounce.bounce-r,
+.metrojs .list-tile.bounce.bounce-r,
+.metrojs .copy-tile.bounce.bounce-r,
+.metrojs .slide.bounce.bounce-r {
+  -webkit-transform: rotateY(20deg);
+  -ms-transform: rotateY(20deg);
+  -moz-transform: rotateY(20deg);
+  -o-transform: rotateY(20deg);
+  transform: rotateY(20deg);
+  -webkit-transform-origin: 0% 50%;
+  -moz-transform-origin: 0% 50%;
+  -ms-transform-origin: 0% 50%;
+  -o-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+}
+.metrojs .tile-strip.bounce.bounce-l,
+.metrojs .live-tile.bounce.bounce-l,
+.metrojs .list-tile.bounce.bounce-l,
+.metrojs .copy-tile.bounce.bounce-l,
+.metrojs .slide.bounce.bounce-l {
+  -webkit-transform: rotateY(-20deg);
+  -ms-transform: rotateY(-20deg);
+  -moz-transform: rotateY(-20deg);
+  -o-transform: rotateY(-20deg);
+  transform: rotateY(-20deg);
+  -webkit-transform-origin: 100% 50%;
+  -moz-transform-origin: 100% 50%;
+  -ms-transform-origin: 100% 50%;
+  -o-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+}
+.metrojs .tile-strip.bounce.bounce-tl,
+.metrojs .live-tile.bounce.bounce-tl,
+.metrojs .list-tile.bounce.bounce-tl,
+.metrojs .copy-tile.bounce.bounce-tl,
+.metrojs .slide.bounce.bounce-tl {
+  -webkit-transform: rotateX(10deg) rotateY(-10deg);
+  -ms-transform: rotateX(10deg) rotateY(-10deg);
+  -moz-transform: rotateX(10deg) rotateY(-10deg);
+  -o-transform: rotateX(10deg) rotateY(-10deg);
+  transform: rotateX(10deg) rotateY(-10deg);
+}
+.metrojs .tile-strip.bounce.bounce-tr,
+.metrojs .live-tile.bounce.bounce-tr,
+.metrojs .list-tile.bounce.bounce-tr,
+.metrojs .copy-tile.bounce.bounce-tr,
+.metrojs .slide.bounce.bounce-tr {
+  -webkit-transform: rotateX(10deg) rotateY(10deg);
+  -ms-transform: rotateX(10deg) rotateY(10deg);
+  -moz-transform: rotateX(10deg) rotateY(10deg);
+  -o-transform: rotateX(10deg) rotateY(10deg);
+  transform: rotateX(10deg) rotateY(10deg);
+}
+.metrojs .tile-strip.bounce.bounce-bl,
+.metrojs .live-tile.bounce.bounce-bl,
+.metrojs .list-tile.bounce.bounce-bl,
+.metrojs .copy-tile.bounce.bounce-bl,
+.metrojs .slide.bounce.bounce-bl {
+  -webkit-transform: rotateX(-10deg) rotateY(-10deg);
+  -ms-transform: rotateX(-10deg) rotateY(-10deg);
+  -moz-transform: rotateX(-10deg) rotateY(-10deg);
+  -o-transform: rotateX(-10deg) rotateY(-10deg);
+  transform: rotateX(-10deg) rotateY(-10deg);
+}
+.metrojs .tile-strip.bounce.bounce-br,
+.metrojs .live-tile.bounce.bounce-br,
+.metrojs .list-tile.bounce.bounce-br,
+.metrojs .copy-tile.bounce.bounce-br,
+.metrojs .slide.bounce.bounce-br {
+  -webkit-transform: rotateX(-10deg) rotateY(10deg);
+  -ms-transform: rotateX(-10deg) rotateY(10deg);
+  -moz-transform: rotateX(-10deg) rotateY(10deg);
+  -o-transform: rotateX(-10deg) rotateY(10deg);
+  transform: rotateX(-10deg) rotateY(10deg);
+}
+.metrojs .live-tile,
+.metrojs .list-tile,
+.metrojs .copy-tile {
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+  z-index: 20;
+}
+.metrojs .live-tile p,
+.metrojs .list-tile p,
+.metrojs .copy-tile p,
+.metrojs .live-tile .face,
+.metrojs .list-tile .face,
+.metrojs .copy-tile .face {
+  display: block;
+  font-size: 1em;
+  line-height: 1.2em;
+  margin: 0;
+}
+.metrojs .live-tile .face,
+.metrojs .list-tile .face,
+.metrojs .copy-tile .face {
+  padding: 0px;
+}
+.metrojs .live-tile p,
+.metrojs .list-tile p,
+.metrojs .copy-tile p {
+  padding: 10px;
+}
+.metrojs .live-tile.half-tile p,
+.metrojs .list-tile.half-tile p,
+.metrojs .copy-tile.half-tile p {
+  padding: 5px;
+}
+.metrojs .live-tile .face.full,
+.metrojs .list-tile .face.full,
+.metrojs .copy-tile .face.full {
+  height: 100%;
+  width: 100%;
+}
+.metrojs .live-tile img,
+.metrojs .list-tile img,
+.metrojs .copy-tile img {
+  border: none;
+}
+.metrojs .live-tile .tile-title,
+.metrojs .list-tile .tile-title,
+.metrojs .copy-tile .tile-title {
+  position: absolute;
+  bottom: 0px;
+  font-size: 12px;
+  left: 0px;
+  padding: 0 0 6px 2%;
+  text-decoration: none;
+  width: 98%;
+  z-index: 30;
+}
+.metrojs .live-tile a,
+.metrojs .list-tile a,
+.metrojs .copy-tile a {
+  color: #fff;
+}
+.metrojs .live-tile a.tile-title:link,
+.metrojs .list-tile a.tile-title:link,
+.metrojs .copy-tile a.tile-title:link,
+.metrojs .live-tile a.tile-title:visited,
+.metrojs .list-tile a.tile-title:visited,
+.metrojs .copy-tile a.tile-title:visited,
+.metrojs .live-tile a.tile-title:hover,
+.metrojs .list-tile a.tile-title:hover,
+.metrojs .copy-tile a.tile-title:hover,
+.metrojs .live-tile a.tile-title,
+.metrojs .list-tile a.tile-title,
+.metrojs .copy-tile a.tile-title {
+  text-decoration: none;
+}
+.metrojs .live-tile a:link,
+.metrojs .list-tile a:link,
+.metrojs .copy-tile a:link,
+.metrojs .live-tile a:visited,
+.metrojs .list-tile a:visited,
+.metrojs .copy-tile a:visited {
+  color: #fff;
+  text-decoration: underline;
+}
+.metrojs .live-tile a:hover,
+.metrojs .list-tile a:hover,
+.metrojs .copy-tile a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.metrojs .light .copy-tile {
+  color: #000;
+}
+.metrojs .light .copy-tile.accent {
+  color: #fff;
+}
+.metrojs .light .copy-tile.accent a,
+.metrojs .light .copy-tile.accent a:link,
+.metrojs .light .copy-tile.accent a:visited,
+.metrojs .light .copy-tile.accent a:hover {
+  color: #fff;
+}
+.metrojs .light .copy-tile a,
+.metrojs .light .copy-tile a:link,
+.metrojs .light .copy-tile a:visited,
+.metrojs .light .copy-tile a:hover {
+  color: #000;
+}
+.metrojs .light .copy-tile .face,
+.metrojs .light .copy-tile .accent {
+  color: #fff;
+}
+.metrojs .light .copy-tile .face a,
+.metrojs .light .copy-tile .accent a,
+.metrojs .light .copy-tile .face a:link,
+.metrojs .light .copy-tile .accent a:link,
+.metrojs .light .copy-tile .face a:visited,
+.metrojs .light .copy-tile .accent a:visited,
+.metrojs .light .copy-tile .face a:hover,
+.metrojs .light .copy-tile .accent a:hover {
+  color: #fff;
+}
+.metrojs .copy-tile p {
+  padding: 5px 5px 0px 5px;
+  font-size: .95em;
+}
+.metrojs .noselect > div,
+.metrojs .noselect > .slide,
+.metrojs .noselect > .slide-front,
+.metrojs .noselect > .slide-back,
+.metrojs .noselect > .fade-front,
+.metrojs .noselect > .fade-back,
+.metrojs .noselect > .flip-front,
+.metrojs .noselect > .flip-back {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.metrojs .live-tile > div,
+.metrojs .list-tile > div,
+.metrojs .live-tile > .slide,
+.metrojs .carousel > .slide,
+.metrojs .live-tile > .slide-front,
+.metrojs .live-tile > .slide-back,
+.metrojs .live-tile > .fade-front,
+.metrojs .live-tile > .fade-back,
+.metrojs .live-tile > .flip-front,
+.metrojs .live-tile > .flip-back {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  top: 0px;
+  left: 0px;
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  z-index: 20;
+}
+.metrojs .list-tile > div {
+  position: relative;
+  background-color: transparent;
+}
+.metrojs img.full,
+.metrojs a.full,
+.metrojs .live-tile .full,
+.metrojs .list-tile .full {
+  display: block;
+  margin: 0px;
+  height: 100%;
+  text-decoration: none;
+  width: 100%;
+}
+.metrojs .live-tile > .back,
+.metrojs .live-tile > .slide-back,
+.metrojs .live-tile > .fade-back,
+.metrojs .live-tile > .flip-back,
+.metrojs .flip-list .flip-back {
+  position: absolute;
+  z-index: 10;
+}
+/*  ========== flip-list Styles ==========
+	.flip-list
+	---li
+	------div.flip-front
+	------div.flip-back
+*/
+.metrojs .flip-list {
+  padding: 0px;
+  margin: 0px;
+}
+.metrojs .list-tile .flip-list {
+  height: 100%;
+  width: 100%;
+}
+.metrojs .flip-list > li > a {
+  border: none;
+  outline: none;
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+}
+.metrojs .flip-list > li img {
+  border: none;
+  outline: none;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+.metrojs .flip-list > li {
+  float: left;
+  list-style-type: none;
+  outline: none;
+  position: relative;
+}
+.metrojs .flip-list > li > div {
+  border: none;
+  background: white;
+  height: 100%;
+  left: 0px;
+  margin: 0px;
+  overflow: hidden;
+  position: absolute;
+  padding: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 20;
+}
+.metrojs .flip-list > li > div.flip-back {
+  height: 0px;
+}
+/* ------ Hardware Accelerated Tiles --------*/
+/* flip */
+.metrojs .live-tile.flip.ha,
+.metrojs .flip-list.ha {
+  position: relative;
+  overflow: hidden;
+}
+.metrojs .live-tile.flip .ha.flip-front,
+.metrojs .flip-list .ha.flip-front,
+.metrojs .live-tile.flip .ha.flip-back,
+.metrojs .flip-list .ha.flip-back {
+  position: absolute;
+  z-index: 20;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.metrojs .flip-list > li > .ha.flip-back,
+.metrojs .flip-list > li > .ha.flip-back img {
+  /* override the values set for margin and ensure the back tile is visible  */
+
+  margin: 0px !important;
+  height: 100%;
+}
+

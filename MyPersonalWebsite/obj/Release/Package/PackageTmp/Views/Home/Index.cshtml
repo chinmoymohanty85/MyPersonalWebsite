@@ -76,16 +76,16 @@
                         <img src="@Url.Content("~/Content/Image/6.jpg")" alt="">
                     </div>
                     <div class="tile-content" style="position: absolute; left: 310px; top: 0px;">
-                        <img src="@Url.Content("~/Content/Image/7.jpg")" alt="">
+                        <img src="@Url.Content("~/Content/Image/7.png")" alt="">
                     </div>
                     <div class="tile-content" style="position: absolute; left: -310px; top: 0px;">
-                        <img src="@Url.Content("~/Content/Image/8.jpg")" alt="">
+                        <img src="@Url.Content("~/Content/Image/8.png")" alt="">
                     </div>
                     <div class="tile-content" style="position: absolute; left: -310px; top: 0px;">
-                        <img src="@Url.Content("~/Content/Image/5.jpg")" alt="">
+                        <img src="@Url.Content("~/Content/Image/5.png")" alt="">
                     </div>
                     <div class="tile-content" style="position: absolute; left: 0px; top: 0px;">
-                        <img src="@Url.Content("~/Content/Image/9.jpg")" alt="">
+                        <img src="@Url.Content("~/Content/Image/9.png")" alt="">
                     </div>
                     <div class="tile-content" style="position: absolute; left: 310px; top: 0px;">
                         <img src="@Url.Content("~/Content/Image/3.jpg")" alt="">
@@ -94,7 +94,7 @@
                         <img src="@Url.Content("~/Content/Image/4.jpg")" alt="">
                     </div>
                     <div class="tile-content" style="position: absolute; left: -310px; top: 0px;">
-                        <img src="@Url.Content("~/Content/Image/2.jpg")" alt="">
+                        <img src="@Url.Content("~/Content/Image/2.png")" alt="">
                     </div>
                     <div class="brand" style="background-color: #333; opacity: 0.6;">
                         <span class="text">Technologies used in the creation of this site</span>
@@ -215,9 +215,7 @@
     <a class="close-reveal-modal">&#215;</a>
 </div>
 <script>
-    $(document).ready(function myfunction() {
-        $(".live-tile").liveTile();
-    });
+   
 
     $('#btnSubmit').click(function() {
         sendMessage();
@@ -263,5 +261,9 @@
 				alert('Message could not be sent. Please try again.');
 			}
 		});
-	}
+    }
+
+    $(function () {
+        $(".live-tile").liveTile();
+    });
 </script>

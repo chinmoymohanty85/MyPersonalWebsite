@@ -48,6 +48,14 @@
       <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Elmah, Version=1.2.14706.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\elmah.corelibrary.1.2.2\lib\Elmah.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Elmah.Mvc, Version=2.1.2.1389, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Elmah.Mvc.2.1.2\lib\net40\Elmah.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
@@ -134,21 +142,33 @@
     <Content Include="Content\Image\1.jpg" />
     <Content Include="Content\Image\1_Hi.jpg" />
     <Content Include="Content\Image\2.jpg" />
+    <Content Include="Content\Image\2.png" />
     <Content Include="Content\Image\2_Hi.jpg" />
+    <Content Include="Content\Image\2_Hi.png" />
     <Content Include="Content\Image\3.jpg" />
     <Content Include="Content\Image\3_Hi.jpg" />
     <Content Include="Content\Image\4.jpg" />
+    <Content Include="Content\Image\4.png" />
     <Content Include="Content\Image\4_Hi.jpg" />
+    <Content Include="Content\Image\4_Hi.png" />
     <Content Include="Content\Image\5.jpg" />
+    <Content Include="Content\Image\5.png" />
     <Content Include="Content\Image\5_Hi.jpg" />
+    <Content Include="Content\Image\5_Hi.png" />
     <Content Include="Content\Image\6.jpg" />
     <Content Include="Content\Image\6_Hi.jpg" />
     <Content Include="Content\Image\7.jpg" />
+    <Content Include="Content\Image\7.png" />
     <Content Include="Content\Image\7_Hi.jpg" />
+    <Content Include="Content\Image\7_Hi.png" />
     <Content Include="Content\Image\8.jpg" />
+    <Content Include="Content\Image\8.png" />
     <Content Include="Content\Image\8_Hi.jpg" />
+    <Content Include="Content\Image\8_Hi.png" />
     <Content Include="Content\Image\9.jpg" />
+    <Content Include="Content\Image\9.png" />
     <Content Include="Content\Image\9_Hi.jpg" />
+    <Content Include="Content\Image\9_Hi.png" />
     <Content Include="Content\Image\accent.png" />
     <Content Include="Content\Image\armor.png" />
     <Content Include="Content\Image\bage-activity.png" />
@@ -250,18 +270,42 @@
     <None Include="Properties\PublishProfiles\MyPersonalDomainX - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\MyPersonalDomainX - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-2.2.2.intellisense.js" />
+    <Content Include="Scripts\accordion.js" />
+    <Content Include="Scripts\buttonset.js" />
+    <Content Include="Scripts\calendar.js" />
+    <Content Include="Scripts\carousel.js" />
+    <Content Include="Scripts\contextmenu.js" />
+    <Content Include="Scripts\dialog.js" />
+    <Content Include="Scripts\dropdown.js" />
+    <Content Include="Scripts\input-control.js" />
     <Content Include="Scripts\jquery-2.2.2.js" />
     <Content Include="Scripts\jquery-2.2.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery-migrate-1.2.1.js" />
+    <Content Include="Scripts\jquery-migrate-1.2.1.min.js" />
+    <Content Include="Scripts\jquery-ui-1.10.3.js" />
+    <Content Include="Scripts\jquery-ui-1.10.3.min.js" />
+    <Content Include="Scripts\jquery.reveal.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\MetroJs.lt.js" />
+    <Content Include="Scripts\MetroJs.lt.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\pagecontrol.js" />
+    <Content Include="Scripts\pagelist.js" />
+    <Content Include="Scripts\rating.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.matchmedia.addListener.js" />
     <Content Include="Scripts\respond.matchmedia.addListener.min.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\slider.js" />
+    <Content Include="Scripts\start-menu.js" />
+    <Content Include="Scripts\tile-drag.js" />
+    <Content Include="Scripts\tile-slider.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
