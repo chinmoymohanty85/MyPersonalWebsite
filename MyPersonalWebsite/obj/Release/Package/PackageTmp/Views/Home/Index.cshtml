@@ -1,0 +1,267 @@
+﻿@{
+    ViewBag.Title = "Chinmoy Mohanty - Software Developer";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    .metrouicss .listview li:hover {
+        outline: 1px #808080 solid;
+    }
+
+    .metrouicss .listview a:first-of-type:hover {
+        outline: 4px #333 solid;
+    }
+
+    .metrouicss .listview li:last-of-type:hover {
+        outline: 0px #808080 solid;
+        cursor: default;
+    }
+</style>
+<div class="page secondary fixed-header">
+    <div class="page-header" style="background: #000000">
+        <div class="page-header-content">
+            <div class="user-login">
+                <a href="@Url.Action("Index", "Home")">
+                    <div class="name">
+                        <span class="first-name">Chinmoy</span> <span class="last-name">Mohanty</span>
+                    </div>
+                    <div class="avatar">
+                        <img src="@Url.Content("~/Content/Image/favicon.jpg")" alt="My Pic" />
+                    </div>
+                </a>
+            </div>
+            <h1 class="fg-color-white">ChinmoyMohanty.Com</h1>
+        </div>
+    </div>
+    <div class="page-region">
+        <div class="page-region-content tiles">
+            <div class="tile-group tile-drag" style="width: auto; max-width: 480px;">
+                <div class="metrojs">
+                    <a href="@Url.Action("About", "Home")" class="live-tile tile image" style="background-color:#000000; margin-left: 0px; margin-top: 0px; margin-right: 10px;" data-stack="true" data-stops="50%,100%,0" data-delay="3000">
+                        <div style="background-image: url(@Url.Content("~/Content/Image/Pic.jpg"));margin-left:1px;margin-top:1px; -moz-background-size: contain; -o-background-size: contain; -webkit-background-size: contain; background-size: contain;">
+                        </div>
+                        <div style="background-color: purple; margin-left: 1px; margin-top: 1px;">
+                            <h3 style="margin-top: 115px; margin-left: 10px;">
+                                <strong>About ME</strong>
+                            </h3>
+                        </div>
+                    </a>
+                </div>
+                <a target="_blank" href="http://blog.chinmoymohanty.com/" class="tile bg-color-red icon">
+                    <div class="tile-content">
+                        <i class="icon-wordpress"></i>
+                    </div>
+                    <div class="brand bg-color-grayDark">
+                        <span class="name">Blog</span>
+                    </div>
+                </a><a href="@Url.Action("Projects", "Home")" class="tile bg-color-purple icon">
+                    <div class="tile-content">
+                        <i class="icon-code"></i>
+                    </div>
+                    <div class="brand bg-color-grayDark">
+                        <span class="name">Projects</span>
+                    </div>
+                </a><a target="_top" href="mailto:chinmoymohanty85@gmail.com?Subject=Hello" class="tile bg-color-green icon">
+                    <div class="tile-content">
+                        <i class="icon-mail"></i>
+                    </div>
+                    <div class="brand bg-color-grayDark">
+                        <span class="name">Mail</span>
+                    </div>
+                </a><a href="@Url.Action("TechsUsed", "Home")" class="tile double image-slider" style="border: 1px solid #333" data-role="tile-slider"
+                       data-param-period="5000" data-param-direction="left">
+                    <div class="tile-content" style="position: absolute; left: -310px; top: 0px;">
+                        <img src="@Url.Content("~/Content/Image/1.jpg")" alt="">
+                    </div>
+                    <div class="tile-content" style="position: absolute; left: 0px; top: 0px;">
+                        <img src="@Url.Content("~/Content/Image/6.jpg")" alt="">
+                    </div>
+                    <div class="tile-content" style="position: absolute; left: 310px; top: 0px;">
+                        <img src="@Url.Content("~/Content/Image/7.jpg")" alt="">
+                    </div>
+                    <div class="tile-content" style="position: absolute; left: -310px; top: 0px;">
+                        <img src="@Url.Content("~/Content/Image/8.jpg")" alt="">
+                    </div>
+                    <div class="tile-content" style="position: absolute; left: -310px; top: 0px;">
+                        <img src="@Url.Content("~/Content/Image/5.jpg")" alt="">
+                    </div>
+                    <div class="tile-content" style="position: absolute; left: 0px; top: 0px;">
+                        <img src="@Url.Content("~/Content/Image/9.jpg")" alt="">
+                    </div>
+                    <div class="tile-content" style="position: absolute; left: 310px; top: 0px;">
+                        <img src="@Url.Content("~/Content/Image/3.jpg")" alt="">
+                    </div>
+                    <div class="tile-content" style="position: absolute; left: -310px; top: 0px;">
+                        <img src="@Url.Content("~/Content/Image/4.jpg")" alt="">
+                    </div>
+                    <div class="tile-content" style="position: absolute; left: -310px; top: 0px;">
+                        <img src="@Url.Content("~/Content/Image/2.jpg")" alt="">
+                    </div>
+                    <div class="brand" style="background-color: #333; opacity: 0.6;">
+                        <span class="text">Technologies used in the creation of this site</span>
+                    </div>
+                </a>
+            </div>
+            <div class="tile-group tile-drag" style="width: auto; max-width: 250px;">
+                <p class=" indent fg-color-white" style="text-align: justify">
+                    This is a site where you can find all professional information available about ME.
+                    <br />
+                    <br />
+                    You'll find links to my BLOG, my PET Projects I have been working on, my Social
+                    Contacts and a little about ME.
+                    <br />
+                    <br />
+                    You can contact me on mail, through various social channels or just leave a message
+                    below and I'll try to get back to you at the earliest:
+                </p>
+                <br />
+                <br />
+                <a href="#" id="btnMessage" data-reveal-id="myModal" class="image-button bg-color-purple fg-color-white"
+                   style="float: right; height: 27.33px; padding-left: 15px; padding-top: 3px;">
+                    Leave
+                    a Message<img class="bg-color-green" src="@Url.Content("~/Content/Image/download-32.png")" alt="message" />
+                </a>
+            </div>
+            <div class="tile-group tile-drag" style="width: auto; max-width: 250px;">
+                <ul class="listview">
+                    <li>
+                        <a target="_blank" href="http://www.facebook.com/chinmoymohanty85" class="icon bg-color-blueDark">
+                            <i class="icon-facebook fg-color-white" style="margin-top: 1px; margin-left: 1px; font-size: 1.1em"></i>
+                        </a><a target="_blank" href="http://www.facebook.com/chinmoymohanty85">
+                            <div class="data">
+                                <h4 class="fg-color-blueDark">Facebook</h4>
+                                <div class="static-rating small">
+                                    <div class="rating-value" style="width: 100%">
+                                    </div>
+                                </div>
+                                <p class="fg-color-white">
+                                    Very Active
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://in.linkedin.com/in/chinmoymohanty85"
+                           class="icon bg-color-white" style="width: 45px; height: 45px;">
+                            <i class="icon-linkedin fg-color-blue"
+                               style="margin-top: -4px; margin-left: -7px; font-size: 1.25em"></i>
+                        </a><a target="_blank"
+                               href="https://in.linkedin.com/in/chinmoymohanty85">
+                            <div class="data">
+                                <h4 class="fg-color-blue">LinkedIN</h4>
+                                <div class="static-rating small">
+                                    <div class="rating-value" style="width: 70%">
+                                    </div>
+                                </div>
+                                <p class="fg-color-blueLight">
+                                    Moderatly Active
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" rel="author" href="https://plus.google.com/+ChinmoyMohanty85/"
+                           class="icon bg-color-redLight"><i class="icon-google-plus fg-color-white" style="margin-top: 0px; margin-left: -1px; font-size: 1.1em"></i></a><a target="_blank" rel="author" href="https://plus.google.com/112429431610348148963/">
+                            <div class="data">
+                                <h4 class="fg-color-redLight">
+                                    Google+
+                                </h4>
+                                <div class="static-rating small">
+                                    <div class="rating-value" style="width: 50%">
+                                    </div>
+                                </div>
+                                <p class="fg-color-lighten">
+                                    Active
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <h4 class="fg-color-white">Feel Free to Post, Poke, Message ME !</h4>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="float: right">
+    <blockquote class="tertiary-text place-right fg-color-red">
+        Styled with <a class="fg-color-red" target="_blank" href="http://metroui.org.ua">
+            Metro
+            UI CSS
+        </a>
+    </blockquote>
+</div>
+<div id="myModal" class="reveal-modal" style="-moz-border-radius: 0px; -webkit-border-radius: 0px; border-radius: 0px;">
+    <h3>
+        <strong>Leave Me a Message</strong>
+    </h3>
+    <br />
+    <div class="input-control text">
+        <input type="text" placeholder="Your Name" id="senderName" name="senderName">
+        <button class="btn-clear" tabindex="-1" type="button"></button>
+    </div>
+    <br />
+    <div class="input-control text">
+        <input type="email" placeholder="Your eMail (example@mail.com)" id="senderEmail" name="senderEmail" required>
+        <button class="btn-clear" tabindex="-1" type="button"></button>
+    </div>
+    <br />
+    <div class="input-control textarea">
+        <textarea id="message" placeholder="Type in your message..." required></textarea>
+    </div>
+
+    <br />
+    <input type="submit" id="btnSubmit" class="bg-color-purple" value="Send" />
+    <a class="close-reveal-modal">&#215;</a>
+</div>
+<script>
+    $(document).ready(function myfunction() {
+        $(".live-tile").liveTile();
+    });
+
+    $('#btnSubmit').click(function() {
+        sendMessage();
+    });
+
+    function sendMessage() {
+
+        var formData = new FormData();
+        formData.append("SenderName", $('#senderName').val());
+        formData.append("SenderEmail", $('#senderEmail').val());
+        formData.append("MailBody", $('#message').val());
+
+        $.ajax({
+            url: '@Url.Action("PostMail", "MailApi")',
+            type: "POST",
+            contentType: false,
+            processData: false,
+            data: formData,
+            success: function (data, status, xhr) {
+				//Nothing to do
+				if (data == "email") {
+					alert('The eMail Address is in incorrect format. Please specify a valid one.');
+					return;
+				}
+				//Close Modal
+				var modal = $('.reveal-modal');
+				topMeasure = parseInt(modal.css('top'));
+				topOffset = modal.height() + topMeasure;
+				//locked = false;
+				$('.reveal-modal-bg').delay(300).fadeOut(300);
+				modal.animate({
+					"top": $(document).scrollTop() - topOffset + 'px',
+					"opacity": 0
+				}, 150, function () {
+					modal.css({ 'top': topMeasure, 'opacity': 1, 'visibility': 'hidden' });
+					// unlockModal();
+				});
+				$('#senderName').val("");
+				$('#senderEmail').val("");
+				$('#message').val("");
+			},
+            error: function (xhr, status, error) {
+				alert('Message could not be sent. Please try again.');
+			}
+		});
+	}
+</script>

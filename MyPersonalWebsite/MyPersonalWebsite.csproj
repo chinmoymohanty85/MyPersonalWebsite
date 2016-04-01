@@ -247,6 +247,8 @@
     <Content Include="fonts\iconFont.eot" />
     <Content Include="fonts\iconFont.ttf" />
     <Content Include="fonts\iconFont.woff" />
+    <None Include="Properties\PublishProfiles\MyPersonalDomainX - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\MyPersonalDomainX - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-2.2.2.intellisense.js" />
     <Content Include="Scripts\jquery-2.2.2.js" />
     <Content Include="Scripts\jquery-2.2.2.min.js" />

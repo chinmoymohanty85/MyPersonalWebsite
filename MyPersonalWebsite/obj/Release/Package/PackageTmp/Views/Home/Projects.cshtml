@@ -1,0 +1,60 @@
+﻿@{
+    ViewBag.Title = "Projects";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    a:hover {
+        background-color: transparent;
+    }
+</style>
+<div class="page secondary fixed-header">
+    <div class="page-header" style="background: #000000">
+        <div class="page-header-content">
+            <div class="user-login">
+                <a href="@Url.Action("Index", "Home")">
+                    <div class="name">
+                        <span class="first-name">Chinmoy</span> <span class="last-name">Mohanty</span>
+                    </div>
+                    <div class="avatar">
+                        <img src="@Url.Content("~/Content/Image/favicon.jpg")" alt="My Pic" />
+                    </div>
+                </a>
+            </div>
+            <a href="@Url.Action("Index", "Home")" class="back-button white big back-link page-back" style="top:50px;left:46px"></a>
+            <h1 class="fg-color-white">Projects</h1>
+        </div>
+    </div>
+    <div class="page-region">
+        <div class="page-region-content tiles">
+            <div class="tile-group tile-drag" style="width: auto; max-width: 480px;">
+                <h3 class="fg-color-lighten">
+                    Some of the Projects I have been working on...
+                </h3>
+                <div id="repos">
+                    <ul id="repo_list"></ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<script>
+    $(document).ready(function myfunction() {
+        $.ajax({
+            type: "GET",
+            url: "https://api.github.com/users/chinmoymohanty85/repos",
+            dataType: "json",
+            success: function (result) {
+                for (i in result) {
+                    $("#repo_list").append(
+                        "<li class='fg-color-lighten'><a href='" + result[i].html_url + "' target='_blank'>" +
+                        "<span style='font-size : larger'>" + result[i].name + "</span><br />" + "<span class='fg-color-lighten' style='margin-left : 50px'>" + result[i].description + "</span>" + "</a></li>"
+                    );
+                   
+                }
+            }
+        });
+    });
+</script>

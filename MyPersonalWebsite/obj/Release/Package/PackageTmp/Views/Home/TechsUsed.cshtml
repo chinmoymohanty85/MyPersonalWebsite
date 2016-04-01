@@ -1,0 +1,123 @@
+﻿@{
+    ViewBag.Title = "Technologies";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    a:hover {
+        background-color: transparent;
+    }
+
+    .metrouicss .listview li:hover {
+        outline: 0px #808080 solid;
+    }
+
+    /*.metrouicss .listview li:last-of-type:hover
+    {
+        outline: 0px #808080 solid;
+        cursor: default;
+    }*/
+</style>
+
+<div class="page secondary fixed-header">
+    <div class="page-header" style="background: #000000">
+        <div class="page-header-content">
+            <div class="user-login">
+                <a href="@Url.Action("Index", "Home")">
+                    <div class="name">
+                        <span class="first-name">Chinmoy</span> <span class="last-name">Mohanty</span>
+                    </div>
+                    <div class="avatar">
+                        <img src="@Url.Content("~/Content/Image/favicon.jpg")" alt="My Pic" />
+                    </div>
+                </a>
+            </div>
+            <a href="@Url.Action("Index", "Home")" class="back-button white big back-link page-back" style="top:50px;left:46px"></a>
+            <h1 class="fg-color-white">Technologies used in this website</h1>
+        </div>
+    </div>
+    <div class="page-region">
+        <div class="page-region-content tiles">
+            <div class="tile-group tile-drag" style="width: auto; max-width: 480px;">
+                <ul class="listview">
+                    <li style="width: inherit;">
+                        <a target="_blank" href="http://www.asp.net/mvc/mvc4">
+                            <div class="icon">
+                                <img src="@Url.Content("~/Content/Image/mvc-logo2.png")" />
+                            </div>
+                        </a>
+                        <a target="_blank" href="http://www.asp.net/mvc/mvc4">
+                            <div class="data">
+                                <h2 class="fg-color-white">ASP.NET MVC 4</h2>
+
+                                <span class="fg-color-purple">
+                                    ASP.NET MVC 4 is a framework for building scalable, standards-based web applications using well-established design patterns and the power
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li style="width: inherit;">
+                        <a target="_blank" href="http://jquery.com/">
+                            <div class="icon">
+                                <img src="@Url.Content("~/Content/Image/jquery.png")" />
+                            </div>
+                        </a>
+                        <a target="_blank" href="http://jquery.com/">
+                            <div class="data">
+                                <h2 class="fg-color-white">jQuery</h2>
+                                <span class="fg-color-purple">
+                                    jQuery is a fast, small, and feature-rich JavaScript library.
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li style="width: inherit;">
+                        <a target="_blank" href="http://jqueryui.com/">
+                            <div class="icon" style="color:#">
+                                <img src="@Url.Content("~/Content/Image/jquery_ui_logo.png")" />
+                            </div>
+                        </a>
+                        <a target="_blank" href="http://jqueryui.com/">
+                            <div class="data">
+                                <h2 class="fg-color-white">jQuery UI</h2>
+
+                                <span class="fg-color-purple">
+                                    jQuery UI is a curated set of user interface interactions, effects, widgets, and themes built on top of the jQuery JavaScript Library.
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li style="width: inherit;">
+                        <a target="_blank" href="http://www.w3schools.com/html/html5_intro.asp" class="icon">
+                            <i class="icon-html5-2 fg-color-white"></i>
+                        </a>
+                        <a target="_blank" href="http://www.w3schools.com/html/html5_intro.asp">
+                            <div class="data">
+                                <h2 class="fg-color-white">HTML5</h2>
+
+                                <span class="fg-color-purple">
+                                    HTML5 is the latest standard of HTML which is still in evolving stage.
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li style="width: inherit;">
+                        <a target="_blank" href="http://www.w3schools.com/css3/" class="icon">
+                            <i class="icon-css3 fg-color-white"></i>
+                        </a>
+                        <a target="_blank" href="http://www.w3schools.com/css3/">
+                            <div class="data">
+                                <h2 class="fg-color-white">CSS3</h2>
+
+                                <span class="fg-color-purple">
+                                    CSS3 is the latest standard for CSS.
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>

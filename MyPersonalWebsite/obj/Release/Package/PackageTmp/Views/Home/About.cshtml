@@ -1,0 +1,48 @@
+﻿@{
+    ViewBag.Title = "About ME";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    a:hover {
+        background-color: transparent;
+    }
+</style>
+<div class="page secondary fixed-header">
+    <div class="page-header" style="background: #000000">
+        <div class="page-header-content">
+            <div class="user-login">
+                <a href="@Url.Action("Index", "Home")">
+                    <div class="name">
+                        <span class="first-name">Chinmoy</span> <span class="last-name">Mohanty</span>
+                    </div>
+                    <div class="avatar">
+                        <img src="@Url.Content("~/Content/Image/favicon.jpg")" alt="My Pic" />
+                    </div>
+                </a>
+            </div>
+            <a href="@Url.Action("Index", "Home")" class="back-button white big back-link page-back" style="top:50px;left:46px"></a>
+            <h1 class="fg-color-white">About ME</h1>
+        </div>
+    </div>
+    <div class="page-region">
+        <div class="page-region-content tiles">
+            <div class="tile-group tile-drag" style="width: auto; max-width: 480px;">
+                <p class="fg-color-lighten">
+                    I am a Developer working across .NET Technologies.
+                    <br />
+                    Passionate about WEB technologies more than anything.
+                    <br />
+                    Fascinated about the idea of how the WEB world and the WinForm world are slowly merging into each other, with a very thin line to differentiate them.
+                    <br />
+                    <br />
+                    I am an active blogger and I blog mostly about Technology.
+                    <br />
+                    Also, I am active on various techical forums like <a href="http://stackoverflow.com/users/2242398/chinmoymohanty85" target="_blank" class="fg-color-red">StackOverflow</a>
+                    <br />
+                    Additionally, You can find my Presentations on <a href="http://www.slideshare.net/chinmoymohanty85" target="_blank" class="fg-color-red">SlideShare</a>
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
