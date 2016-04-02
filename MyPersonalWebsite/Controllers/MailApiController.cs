@@ -6,6 +6,7 @@ using System.Net.Http;
 using System.Web.Http;
 using System.Net.Mail;
 using System.Net.Mime;
+using System.Web.Configuration;
 using System.Web.Mvc;
 
 namespace MyPersonalWebsite.Controllers
@@ -33,17 +34,18 @@ namespace MyPersonalWebsite.Controllers
             try
             {
                 MailMessage msg1 = new MailMessage();
-                //msg1.From = new MailAddress("mailme@chinmoymohanty.com", !String.IsNullOrWhiteSpace(senderName) ? senderName : "User");
-                //msg1.To.Add("mailme@chinmoymohanty.com");
-                msg1.From = new MailAddress("chinmoymohanty85@gmail.com", !String.IsNullOrWhiteSpace(mailModel.SenderName) ? mailModel.SenderName : "User");
+
+                //send the Feedback to Self
+                msg1.From = new MailAddress("mail@chinmoymohanty.com", !String.IsNullOrWhiteSpace(mailModel.SenderName) ? mailModel.SenderName : "User");
                 msg1.To.Add("chinmoymohanty85@gmail.com");
                 msg1.Subject = "Feedback from Visitor";
                 msg1.Body = mailModel.MailBody;
                 msg1.IsBodyHtml = false;
 
 
+                //send the Acknowledgement to Visitor
                 MailMessage msg2 = new MailMessage();
-                msg2.From = new MailAddress("chinmoymohanty85@gmail.com", "Chinmoy Mohanty");
+                msg2.From = new MailAddress("mail@chinmoymohanty.com", "Chinmoy Mohanty");
                 msg2.To.Add(mailModel.SenderEmail);
                 msg2.Subject = "Thank you for your Feedback";
                 msg2.Body = "Hi " + (!String.IsNullOrWhiteSpace(mailModel.SenderName) ? mailModel.SenderName : "User") + "," + Environment.NewLine + Environment.NewLine + "I am very glad that you took the time to provide me feedback and suggestions regarding my website and its deeply appreciated. I'll try to get back to you at the earliest regarding the same." + Environment.NewLine + Environment.NewLine + "Regards," + Environment.NewLine + "Chinmoy Mohanty";
@@ -51,7 +53,12 @@ namespace MyPersonalWebsite.Controllers
 
                 // Init SmtpClient and send
                 SmtpClient smtpClient = new SmtpClient("smtp.sendgrid.net", Convert.ToInt32(587));
-                System.Net.NetworkCredential credentials = new System.Net.NetworkCredential("chinmoymohanty85", "security@X85s");
+
+                //sendgrid creds - get it at runtime from azure config OR override in azure config
+                var sgUserName = WebConfigurationManager.AppSettings["SendGridUserName"];
+                var sgPassword = WebConfigurationManager.AppSettings["SendGridPassword"];
+
+                System.Net.NetworkCredential credentials = new System.Net.NetworkCredential(sgUserName, sgPassword);
                 smtpClient.Credentials = credentials;
 
                 smtpClient.Send(msg1);
